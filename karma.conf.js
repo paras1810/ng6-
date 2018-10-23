@@ -20,9 +20,11 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
+    
+    
     reporters: ['progress', 'kjhtml'],
-    port: 9876,
-    colors: true,
+    port: 9898,// port changed previous was not working
+    colors: false,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
